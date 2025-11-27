@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PrimeLibrary Services — Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <div class="logo">PL</div>
+    <div class="brand-text">
+      <h3>PrimeLibrary Services</h3>
+      <p>Trusted Library & School Digital Solutions</p>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="nav-cta">
+    <a href="contact.html" class="btn-demo">Request Demo</a>
+  </div>
+
+  <div class="mobile-menu" id="menuToggle">☰</div>
+</header>
+
+<section class="page-header">
+  <h1>Our Library Services</h1>
+  <p>Efficient, modern, and student-centered solutions for schools and institutions.</p>
+</section>
+
+<section class="service-grid">
+  <div class="service-card-big" data-service="cataloging" id="cataloging">
+    <img src="img/cataloging.jpg.jpg" alt="Cataloging Service">
+    <h2>Cataloging & Dewey Decimal Classification (DDC)</h2>
+    <p>We professionally catalog books using DDC standards to ensure organized and easy research navigation.</p>
+  </div>
+
+  <div class="service-card-big" data-service="repair" id="repair">
+    <img src="img/Repair.jpg.jpg" alt="Book Repair and Restoration">
+    <h2>Book Repair & Restoration</h2>
+    <p>Preservation and treatment of damaged book covers, spines, pages, and old archives.</p>
+  </div>
+
+  <div class="service-card-big" data-service="software" id="software">
+    <img src="img/Software.jpg.jpg" alt="Library Management Software">
+    <h2>Library Software Installation</h2>
+    <p>We install library management systems for book search, cataloguing, barcoding, and user management.</p>
+  </div>
+
+  <div class="service-card-big" data-service="borrow" id="borrow">
+    <img src="img/borrow.jpg.jpg" alt="Borrowing and Return System">
+    <h2>Borrowing & Automated Return Systems</h2>
+    <p>Borrowing workflow automation with student accounts, barcode systems, and notifications.</p>
+  </div>
+</section>
+
+
+<!-- ===== Service Modal (matches the CSS you requested) ===== -->
+<div class="service-modal" id="serviceModal">
+  <div class="service-modal-content">
+    <span class="modal-close" id="modalClose">&times;</span>
+
+    <!-- image (kept flexible so CSS still controls overall look) -->
+    <img id="modalImg" src="" alt="" style="width:100%; height:180px; object-fit:cover; border-radius:6px; margin-bottom:12px;">
+
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+
+    <div style="margin-top:16px; text-align:right;">
+      <a href="contact.html" class="btn-primary">Request This Service</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-info">
+    <strong>PrimeLibrary Services</strong>
+    <p>Comprehensive Library & School Digital Solutions</p>
+  </div>
+  <p>© 2025 PrimeLibrary Services. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
